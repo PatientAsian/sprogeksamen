@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Metadata -->
+  <meta charset="utf-8">
+  <title>Patient Asian</title>
+  <meta name="title" content="Patient Asian Design">
+  <meta name="description" content="Multimedia Designer and Composer">
+  <meta name="author" content="Patient Asian">
+  <!-- Prevent search engines from indexing -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- Scaling -->
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <!-- Favicon -->
+  <link rel="shortcut icon" id="favicon" href="img/icon.png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <!-- CSS -->
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/bootstrap-grid.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/featherlight.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="container text-center">
+      <img id="logo" class="mt-4" src="img/logo1.png">
+      <h1>Dane it!</h1>
+    </header>
+
+    <!-- Page Content -->
+    <main>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center mb-3">
+            <a href="#" class="facebook "><div class="logintext mb-2">Login med Facebook eller Google+</div> <i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="google"><i class="fab fa-google-plus-g"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1"><i class="fas fa-user"></i> E-mail</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Indtast e-mail eller brugernavn. . .">
+
+          </div>
+          <div class="form-group mb-2">
+            <label for="exampleInputPassword1"><i class="fas fa-unlock-alt"></i> Kodeord</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Indtast kodeord. . .">
+            <small class="form-text mt-2"><u>Glemt dit kodeord?</u></small>
+          </div>
+          <div class="text-center">
+            <a href="home.html" class="btn btn-primary loginbtn mt-2">Log in</a>
+          </div>
+          <div class="text-center">
+            <a href="registrer.html" class="btn btn-primary registrerbtn loginbtn mt-2">Registrer</a>
+          </div>
+        </form>
+      </div>
+    </main>
+
+<!-- Bootstrap -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+<!-- Featherlight.js -->
+  <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<!-- Fade-in div script -->
+    <script>
+    $(".square").on("click", function() {
+      $('#example1').fadeOut();
+      $('#example2').fadeOut();
+      $('#example3').fadeOut();
+        var idname= $(this).attr("contentId");
+        var id= '#' + $(this).attr("contentId");
+        $('#details').fadeOut(function(){
+            $(this).text(idname).fadeIn();
+            $(id).fadeIn();
+        })
+    });
+  </script>
+</body>
+
+</html>

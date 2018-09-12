@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Metadata -->
+  <meta charset="utf-8">
+  <title>Patient Asian</title>
+  <meta name="title" content="Patient Asian Design">
+  <meta name="description" content="Multimedia Designer and Composer">
+  <meta name="author" content="Patient Asian">
+  <!-- Prevent search engines from indexing -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- Scaling -->
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <!-- Favicon -->
+  <link rel="shortcut icon" id="favicon" href="img/icon.png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <!-- CSS -->
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/bootstrap-grid.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/featherlight.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+  <script src="js/score.js"></script>
+  <script src="https://unpkg.com/tippy.js@2/dist/tippy.all.min.js"></script>
+</head>
+
+<body id="swipemain" class="bg_none gamebg">
+
+  <!-- Header -->
+  <header class="headerbg">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-1 my-2 centeralign">
+          <a href="home.html"><i class="fas fa-angle-double-left ml-3"></i></a>
+        </div>
+        <div class="col-2 my-2">
+          <img src="img/kefir.png" class="avatar img-thumbnail userimg">
+        </div>
+        <div class="col-6 my-2 centeralign">
+          <span class="nametext">Kefir Sefir</span>
+        </div>
+        <div class="col-3 my-2 centeralign">
+          <span>Point:&shy;</span><span id="result" class="pointtext"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <main>
+    <div id="question1">
+    <h2 id="intro_tekst" class="mt-5 mb-3">Han <button class="tipbtn" data-local="true" data-tippy=""><b>kører</b></button> på arbejde.</h2>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col mx-3">
+          <a href="#" class="d-block mb-2 h-100 wronganswer">
+            <img class="img-fluid img-game" src="img/spil/kat.JPG" alt="">
+          </a>
+        </div>
+        <div class="col mx-3">
+          <a href="#" class="d-block mb-2 h-100 wronganswer">
+            <img class="img-fluid img-game" src="img/spil/hop.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col mx-3">
+          <a href="#" class="d-block mb-2 h-100 wronganswer">
+            <img class="img-fluid img-game" src="img/spil/guitarist.jpg" alt="">
+          </a>
+        </div>
+        <div class="col mx-3">
+          <a onclick="pushCorrect()" href="#" class="d-block mb-2 h-100 correctanswer">
+            <img class="img-fluid img-game" src="img/spil/koerer.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="question2">
+      <h2 id="intro_tekst" class="mt-5 mb-3">Line <button class="tipbtn" data-local="true" data-tippy=""><b>cykler</b></button> sammen med hendes veninde.</h2>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col mx-3">
+            <a href="#" class="d-block mb-2 h-100 wronganswer">
+              <img class="img-fluid img-game" src="img/spil/and.png" alt="">
+            </a>
+          </div>
+          <div class="col mx-3">
+            <a href="#" class="d-block mb-2 h-100 wronganswer">
+              <img class="img-fluid img-game" src="img/spil/bader.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col mx-3">
+            <a onclick="pushCorrect()" href="#" class="d-block mb-2 h-100 correctanswer">
+              <img class="img-fluid img-game" src="img/spil/cykler.jpg" alt="">
+            </a>
+          </div>
+          <div class="col mx-3">
+            <a href="#" class="d-block mb-2 h-100 wronganswer">
+              <img class="img-fluid img-game" src="img/spil/flotfyr.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="container">
+    <div class="row text-center">
+      <div class="col mx-5">
+        <div id="answer">Korrekt!</div>
+        <div id="wronganswer">Forkert!</div>
+      </div>
+    </div>
+  </div>
+
+    
+    <footer class="bottom fixed-bottom">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="centeralign">
+            </div>
+            <div class="text-center">
+              <a class="btn btn-primary right_space start_btn">Næste →</a>
+              <a href="godt_klaret.html" class="btn btn-primary right_space start_btn resultbtn">Se resultat</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+<div id="myTemplate" style="display: none;">
+  <h6 class="tiptext">Oversæt <span class="tiptext" style="color: dodgerblue; font-weight:bold;">tekst?</span></h6>
+  <div>
+    <a href="https://translate.google.com/#da/ar/kører" target="_blank">
+      <img src="img/translate.png" class="translate">
+    </a>
+  </div>
+</div>
+
+<div id="myTemplate2" style="display: none;">
+  <h6 class="tiptext">Oversæt <span class="tiptext" style="color: dodgerblue; font-weight:bold;">tekst?</span></h6>
+  <div>
+    <a href="https://translate.google.com/#da/ar/cykler" target="_blank">
+      <img src="img/translate.png" class="translate">
+    </a>
+  </div>
+</div>  
+  
+<!-- Bootstrap -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+<!-- Featherlight.js -->
+  <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<!-- Swipe right to go back-->
+  <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+
+          var myElement = document.getElementById('swipemain');
+
+          // create a simple instance
+          // by default, it only adds horizontal recognizers
+          var mc = new Hammer(myElement);
+
+          // let the pan gesture support all directions.
+          // this will block the vertical scrolling on a touch-device while on the element
+          mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+
+          // listen to events...
+          mc.on("panright", function(ev) {
+              window.history.back();
+          });
+        });
+  </script>
+  <script>
+    tippy('.tipbtn', {
+      arrow: true,
+      arrowType: 'round',
+      interactive: true,
+      trigger: 'click',
+      theme: 'light',
+      html: '#myTemplate'
+    });
+    tippy('.tipbtn2', {
+      arrow: true,
+      arrowType: 'round',
+      interactive: true,
+      trigger: 'click',
+      theme: 'light',
+      html: '#myTemplate2'
+    })
+  </script>
+<!-- Fade-in div script -->
+  <script>
+    $(function() {
+      $('#question2').hide();
+    });
+    
+    $(".start_btn").on("click", function() {
+      $('#answer').fadeOut('slow');
+      $('#wronganswer').fadeOut('slow');
+      $('.start_btn').fadeOut('slow');
+      $('#question1').fadeOut('slow', function() {
+        $('#question2').fadeIn(1000);
+        $('.resultbtn').fadeIn(1000);
+      });
+    });
+  </script>
+</body>
+
+
+</html>

@@ -1,0 +1,565 @@
+/*
+================================
+Basic Setup
+================================
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  /* Blue Background: 
+  background: #3c7ed3;
+  */
+  background: url('../img/bgblur.jpg');
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Comfortaa', cursive;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/*
+================================
+Global Elements
+================================
+*/
+
+section {
+  margin: 1rem 0 4rem 0;
+}
+
+a {
+  color: rgb(100,100,100);
+  text-decoration: none;
+}
+
+p {
+  color: rgb(80,80,80);
+}
+
+h1 {
+  color: rgb(240,240,240);
+  font-size: 36px;
+  font-weight: 400;
+  text-shadow: 1px 2px 1px rgba(0,0,0,.3);
+}
+
+h2 {
+  color: rgb(240,240,240);
+  font-size: 32px;
+  font-weight: 400;
+  text-shadow: 1px 2px 1px rgba(0,0,0,.3);
+}
+
+h3 {
+  color: rgb(240,240,240);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+h4 {
+  color: rgb(40,40,40);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h5 {
+  color: rgb(240,240,240);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+h6 {
+  color: rgb(240, 240, 240);
+  font-size: 14px;
+  font-weight: 300;
+  text-shadow: 1px 2px 1px rgba(0,0,0,.5);
+}
+
+hr {
+  border: 1px outset #8c8b8b;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+header {
+
+}
+
+main {
+
+}
+
+
+ul li {
+  list-style-type: none;
+}
+
+button {
+
+}
+
+label {
+  color: rgb(240,240,240);
+  text-shadow: 1px 2px 1px rgba(0,0,0,.3);
+}
+
+span {
+  color: rgb(50,100,255);
+  font-weight: bold;
+  text-shadow: 0px 1px 0px rgba(0,0,0,.2);
+}
+
+footer {
+
+}
+
+/*
+================================
+IDs
+================================
+*/
+
+#logo {
+  border-radius: 15%;
+  height: auto;
+  width: 25%
+}
+
+#regavatar {
+  background: white;
+  border-radius: 50%;
+  width: 200px;
+}
+
+#answer {
+  color: rgb(40,250,40);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#wronganswer {
+  color: rgb(250,40,40);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+/*
+================================
+Text
+================================
+*/
+
+.form-text {
+  color: rgb(240,240,240);
+  text-align: right;
+  text-shadow: 1px 2px 1px rgba(0,0,0,.3);
+}
+
+.logintext {
+  color: rgb(240,240,240);
+  font-size: 12px;
+  text-shadow: 1px 2px 1px rgba(0,0,0,.3);
+}
+
+.nametext {
+  color: rgb(80,80,80);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nametextsm {
+  color: rgb(80,80,80);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.menubtn {
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.menubtn:hover {
+  color: rgb(40,40,40);
+  text-decoration: none;
+}
+
+.menubtn2 {
+  text-decoration: none !important;
+}
+
+.tiptext {
+  color: rgb(40,40,40);
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  text-shadow: 1px 2px 1px rgba(0,0,0,0);
+}
+
+.pointtext {
+  color: limegreen;
+  font-weight: 600;
+}
+
+/*
+================================
+Messaging - Original styling by Yusuf Bulgurcu, modified for "Dane it!"
+================================
+*/
+
+.msgbubble1,
+.msgbubble2 {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+.msgbubble1 a {
+  background: #42a5f5;
+  border-radius: 20px;
+  color: #fff !important;
+  display: block;
+  max-width: 75%;
+  padding: 7px 13px 7px 13px;
+}
+
+.msgbubble1:before {
+  bottom: -0.8em;
+  color: rgba(84, 110, 122, 1.0);
+  content: attr(data-is);
+  display: block;
+  font-size: .750rem;
+  position: absolute;
+  right: 15px;
+}
+
+.msgbubble2 a {
+  background: #f1f1f1;
+  border-radius: 20px;
+  color: #000 !important;
+  display: block;
+  max-width: 75%;
+  padding: 7px 13px 7px 13px;
+}
+
+.msgbubble2:before {
+  bottom: -0.8em;
+  color: rgba(84, 110, 122, 1.0);
+  content: attr(data-is);
+  display: block;
+  font-size: .750rem;
+  left: 13px;
+  position: absolute;
+}
+
+.card {
+  border-radius: 0;
+}
+
+.card-footer {
+  border: 2px solid dodgerblue;
+  bottom: 0;
+  left: 0;
+  position: absolute; 
+  right: 0;
+}
+
+/*
+================================
+Objects
+================================
+*/
+
+.boticon {
+  border-radius: 50%;
+  width: 80px;
+}
+
+.loginbtn {
+  border: 0;
+  color: rgb(240,240,240) !important;
+  width: 50vw;
+}
+
+.centeralign {
+  align-items: center;
+  display: flex;
+  padding-left: 0;
+}
+
+.centeralignimg {
+  align-items: center;
+  display: flex;
+  justify-content: space-around !important;
+}
+
+.hcenteralign {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.userimg {
+  border-radius: 40%;
+}
+
+.headerbg {
+  background: rgb(200,220,240);
+}
+
+.headerbgtr {
+  background: rgba(240,240,240)!important;
+}
+
+.logout {
+  font-size: 12px;
+  height: 2rem;
+}
+
+.newsbox {
+  background-color: rgba(100,100,100,0.6);
+  border-radius: 5%;
+}
+
+.tipbtn {
+  background: none;
+  border: none;
+  color: rgb(240,240,240);
+  padding: 0;
+}
+
+.tippy-tooltip.light-theme {
+    color: #26323d;
+    box-shadow: 0 0 20px 4px rgba(154, 161, 177, .15), 0 4px 80px -8px rgba(36, 40, 47, .25), 0 4px 4px -2px rgba(91, 94, 105, .15);
+    background-color: #fff
+}
+
+.tippy-tooltip.light-theme .tippy-backdrop {
+    background-color: #fff
+}
+
+.tippy-tooltip.light-theme .tippy-roundarrow {
+    fill: #fff
+}
+
+.tippy-tooltip.light-theme[data-animatefill] {
+    background-color: transparent
+}
+
+.translate {
+  height: auto;
+  width: 30px;
+}
+
+.img-game {
+  background-color: azure;
+  border: 2px solid dodgerblue;
+  padding: .1rem;
+}
+
+.resultbtn {
+  display: none;
+}
+
+.bg_none2{
+  background: rgb(240,240,240) !important;
+}
+
+/*
+================================
+Game
+================================
+*/
+.gamebg {
+  background-color: rgb(80,80,80);
+}
+
+/*
+================================
+FA Icon Styling
+================================
+*/
+
+.fab {
+  border-radius: 5%;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-facebook-f {
+  background: rgb(41, 62, 146);
+  color: white;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.fa-facebook-f:hover {
+  background: rgb(41, 62, 226);
+  color: white;
+  transition: .2s ease-in-out;
+}
+
+.fa-google-plus-g {
+  background: rgb(183,50,74);
+  color: white;
+  padding: 1rem .4rem 1rem .4rem;
+}
+
+.fa-google-plus-g:hover {
+  background: rgb(221, 75, 57);
+  color: white;
+  transition: .2s ease-in-out;
+}
+
+.fa-angle-double-left {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+/*
+================================
+Media Queries
+================================
+*/
+
+@media only screen and (max-width: 1168px) {
+
+}
+
+/* For tablets: */
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+/* For tablets and big phones: */
+
+@media screen and (max-width: 768px) {
+
+
+/* For small mobile phones: */
+
+@media screen and (max-width: 360px) {
+
+  h1 {
+    margin-bottom: 0.5rem !important;
+    margin-top: 0.5rem !important;
+  }
+  
+}
+
+/* ZUNE KODE LMAO */
+/* Til Home */
+.culture{
+  background-color: rgba(169,169,169,0.8);
+  border-radius:37px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* margin-left: 15px;
+  margin-right: 15px; */
+  top:50%;
+  left: 50%;
+}
+
+.cultfacts{
+  color: white;
+  padding-bottom: 5px;
+}
+.culttitle{
+  color: white;
+  font-size: 37px;
+  font-weight: 0;
+  text-shadow:none;
+  opacity: 1;
+  text-align: center;
+  margin: 0;
+}
+.cultimg{
+  border-radius: 32px;
+}
+
+/* Til Registrer */
+input {
+  padding: 25px !important;
+  border-radius: 30px;
+}
+  
+#registrer_zune{
+padding: 10px 20% !important;
+margin-top: 10px;
+}
+
+/* Til Spil */
+.bg_none{
+  background: rgb(100,100,100) !important;
+}
+  
+.start_btn {
+  padding: 20px 40px !important;
+  font-size: 30px;
+  border-radius: 38px;
+  margin-bottom: 10px;
+}
+
+.right_space {
+  color: rgb(240,240,240) !important;
+  text-align: left;
+}
+  
+#small_img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+  
+.bottom {
+  bottom: 5% ;
+  position:absolute;
+  margin: auto;
+}
+
+/* Til Godt_klaret og Spil intro  */
+
+.spil_tekst {
+  color: rgb(240,240,240);
+  font-size: 37px;
+  font-weight: 600;
+  text-shadow:none;
+  opacity: 1;
+  text-align: center;
+}
+  
+.spil_img {
+margin-top: 50px;
+max-width: 203px;
+}
+  
+.display_none{
+  display: none;
+}
+
+/* Til Spil_intro */
+#intro_tekst {
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: rgb(240,240,240);
+  text-shadow: none;
+  font-size: 20px;
+}
+  
+/* Til Index (log-in) side */
+.registrerbtn {
+  /* Bruger også classen loginbtn */
+  margin-top:5% !important;
+}

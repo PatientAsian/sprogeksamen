@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Metadata -->
+  <meta charset="utf-8">
+  <title>Patient Asian</title>
+  <meta name="title" content="Patient Asian Design">
+  <meta name="description" content="Multimedia Designer and Composer">
+  <meta name="author" content="Patient Asian">
+  <!-- Prevent search engines from indexing -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- Scaling -->
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <!-- Favicon -->
+  <link rel="shortcut icon" id="favicon" href="img/icon.png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <!-- CSS -->
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/bootstrap-grid.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/featherlight.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body class="bg_none">
+
+
+
+    <!-- Header -->
+    <header class="headerbg">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-1 my-2 centeralign">
+            <a href="home.html"><i class="fas fa-angle-double-left ml-3"></i></a>
+          </div>
+          <div class="col-2 my-2">
+            <img src="img/kefir.png" class="avatar img-thumbnail userimg">
+          </div>
+          <div class="col-7 my-2 centeralign">
+            <span class="nametext">Kefir Sefir</span>
+          </div>
+          <div class="col-2 my-2 centeralign">
+            
+          </div>
+        </div>
+      </div>
+
+
+    </header>
+
+    <!-- Page Content -->
+    <main>
+      <h1 class="spil_tekst">Godt klaret!</h1>
+      <div class="centeralignimg">
+      <img src="img/godtklaret3.png" class="spil_img" alt="">
+      <img src="img/godtklaret2.png" class="display_none" alt="">
+      <img src="img/godtklaret1.png" class="display_none" alt="">
+        </div>
+
+
+      <footer class="bottom fixed-bottom">
+
+          <div class="row">
+            <div class="col">
+              <div class="centeralign">
+
+              </div>
+              <div class="text-center">
+                <a href="spil.html" class="btn btn-primary right_space start_btn">Videre →</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+    </main>
+
+<!-- Bootstrap -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+<!-- Featherlight.js -->
+  <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<!-- Fade-in div script -->
+    <script>
+    $(".square").on("click", function() {
+      $('#example1').fadeOut();
+      $('#example2').fadeOut();
+      $('#example3').fadeOut();
+        var idname= $(this).attr("contentId");
+        var id= '#' + $(this).attr("contentId");
+        $('#details').fadeOut(function(){
+            $(this).text(idname).fadeIn();
+            $(id).fadeIn();
+        })
+    });
+  </script>
+</body>
+
+
+</html>

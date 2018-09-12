@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Metadata -->
+  <meta charset="utf-8">
+  <title>Patient Asian</title>
+  <meta name="title" content="Patient Asian Design">
+  <meta name="description" content="Multimedia Designer and Composer">
+  <meta name="author" content="Patient Asian">
+  <!-- Prevent search engines from indexing -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- Scaling -->
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <!-- Favicon -->
+  <link rel="shortcut icon" id="favicon" href="img/icon.png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <!-- CSS -->
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/bootstrap-grid.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/featherlight.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+  <script src="js/score.js"></script>
+</head>
+
+<body id="swipemain" class="bg_none gamebg">
+
+  <!-- Header -->
+  <header class="headerbg">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-1 my-2 centeralign">
+          <a href="home.html"><i class="fas fa-angle-double-left ml-3"></i></a>
+        </div>
+        <div class="col-2 my-2">
+          <img src="img/kefir.png" class="avatar img-thumbnail userimg">
+        </div>
+        <div class="col-6 my-2 centeralign">
+          <span class="nametext">Kefir Sefir</span>
+        </div>
+        <div class="col-3 my-2 centeralign">
+          <span>Point:&shy;</span><span id="result" class="pointtext"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <main>
+    <div class="question2">
+      <h2 id="intro_tekst" class="mt-5 mb-3">Line <b>cykler</b> sammen med hendes veninde.</h2>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col mx-3">
+            <a href="#" class="d-block mb-2 h-100 wronganswer">
+              <img class="img-fluid img-game" src="img/spil/and.png" alt="">
+            </a>
+          </div>
+          <div class="col mx-3">
+            <a href="#" class="d-block mb-2 h-100 wronganswer">
+              <img class="img-fluid img-game" src="img/spil/bader.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col mx-3">
+            <a id="correctanswer" onclick="pushCorrect()" href="#" class="d-block mb-2 h-100">
+              <img class="img-fluid img-game" src="img/spil/cykler.jpg" alt="">
+            </a>
+          </div>
+          <div class="col mx-3">
+            <a href="#" class="d-block mb-2 h-100 wronganswer">
+              <img class="img-fluid img-game" src="img/spil/flotfyr.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="container">
+    <div class="row text-center">
+      <div class="col mx-5">
+        <div id="answer">Korrekt!</div>
+        <div id="wronganswer">Forkert!</div>
+      </div>
+    </div>
+  </div>
+
+    
+    <footer class="bottom fixed-bottom">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="centeralign">
+            </div>
+            <div class="text-center">
+              <a class="btn btn-primary start_btn" href="godt_klaret.html">Resultat →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+<!-- Bootstrap -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+<!-- Featherlight.js -->
+  <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<!-- Swipe right to go back-->
+  <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+
+          var myElement = document.getElementById('swipemain');
+
+          // create a simple instance
+          // by default, it only adds horizontal recognizers
+          var mc = new Hammer(myElement);
+
+          // let the pan gesture support all directions.
+          // this will block the vertical scrolling on a touch-device while on the element
+          mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+
+          // listen to events...
+          mc.on("panright", function(ev) {
+              window.history.back();
+          });
+        });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      $(this).text(idname).fadeIn();
+      $(id).fadeIn();
+    });
+  </script>
+</body>
+
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Metadata -->
+  <meta charset="utf-8">
+  <title>Patient Asian</title>
+  <meta name="title" content="Patient Asian Design">
+  <meta name="description" content="Multimedia Designer and Composer">
+  <meta name="author" content="Patient Asian">
+  <!-- Prevent search engines from indexing -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- Scaling -->
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <!-- Favicon -->
+  <link rel="shortcut icon" id="favicon" href="img/icon.png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <!-- CSS -->
+  <link href="css/bootstrap-grid.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/featherlight.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+  <script src="https://unpkg.com/tippy.js@2/dist/tippy.all.min.js"></script>
+</head>
+
+<body class="bg_none2" id="swipemain">
+
+    <!-- Header -->
+    <header class="headerbg fixed-top">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-1 my-2 centeralign">
+            <a href="home.html"><i class="fas fa-angle-double-left ml-3"></i></a>
+          </div>
+          <div class="col-2 my-2">
+            <img src="img/kefir.png" class="avatar img-thumbnail userimg">
+          </div>
+          <div class="col-7 my-2 centeralign">
+            <span class="nametext">Kefir Sefir</span>
+          </div>
+          <div class="col-2 my-2 centeralign">
+            <a href="#" class="menubtn mx-3">☰</a>
+          </div>
+        </div>
+      </div>
+      
+      
+    </header>
+  
+    <!-- Page Content -->
+    <main>
+      <h4 class="pt-3 mt-5 mb-0 ml-2">Venner</h4>
+      <hr class="my-2">
+      <div class="container-fluid mt-3">
+        <div class="row">
+          <div class="col-3">
+            <img src="img/ava1.png" class="avatar img-thumbnail userimg">
+          </div>
+          <div class="col-7 my-2 centeralign">
+            <span class="nametextsm">Muhammad Belal har sendt en venneanmodning.</span>
+          </div>
+          <div class="col-2 my-2 centeralign">
+            <a href="msg.html" class="menubtn2">❌✔️</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3 my-2">
+            <img src="img/ava4.png" class="avatar img-thumbnail userimg">
+          </div>
+          <div class="col-7 my-2 centeralign">
+            <span class="nametext">Yusuf Başaran<br><p class="nametextsm my-0">... Ja præcis</p></span>
+          </div>
+          <div class="col-2 my-2 centeralign">
+            <a href="msg.html" class="mx-3"><i class="fas fa-angle-double-right"></i></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3 my-2">
+            <img src="img/ava2.png" class="avatar img-thumbnail userimg">
+          </div>
+          <div class="col-7 my-2 centeralign">
+            <span class="nametext">Nawal Shammas<br><p class="nametextsm my-0">... på arbejde i dag?</p></span>
+          </div>
+          <div class="col-2 my-2 centeralign">
+            <a href="#" class="mx-3"><i class="fas fa-angle-double-right"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="navbar fixed-bottom headerbg">
+        <div class="container-fluid centeralignimg">
+          <div class="row">
+            <div class="col text-center">
+             <a href="msg.html"><img src="img/msg.png" class="avatar img-fluid boticon mx-3"></a>
+              <span>Chat</span>
+            </div>
+            <div class="col text-center">
+              <a href="spil.html"><img src="img/rank.png" class="avatar img-fluid boticon mx-3"></a>
+              <br>
+              <span>Spil</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+<!-- Tippy Tooltip Box -->
+<div id="myTemplate" style="display: none;">
+  <h6 class="tiptext">Oversæt <span class="tiptext" style="color: dodgerblue; font-weight:bold;">tekst?</span></h6>
+  <div>
+    <a href="https://translate.google.com/#da/ar/kraftedeme" target="_blank">
+      <i class="fas fa-language"></i>
+    </a>
+  </div>
+</div>
+  
+<!-- Bootstrap -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+<!-- Featherlight.js -->
+  <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+
+          var myElement = document.getElementById('swipemain');
+
+          // create a simple instance
+          // by default, it only adds horizontal recognizers
+          var mc = new Hammer(myElement);
+
+          // let the pan gesture support all directions.
+          // this will block the vertical scrolling on a touch-device while on the element
+          mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+
+          // listen to events...
+          mc.on("panright", function(ev) {
+              window.history.back();
+          });
+        });
+  </script>
+  <script>
+    const myTemplate = document.createElement('div')
+    myTemplate.innerHTML = '<h3>Cool <span style="color: pink;">HTML</span> inside here!</h3>'
+    html: '#templateId'
+    tippy('.tipbtn', {
+      arrow: true,
+      arrowType: 'round',
+      interactive: true,
+      trigger: 'click',
+      theme: 'light',
+      html: '#myTemplate'
+    })
+  </script>
+</body>
+
+</html>
